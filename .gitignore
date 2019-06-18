@@ -89,6 +89,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.pycharm
 
 # Spyder project settings
 .spyderproject
