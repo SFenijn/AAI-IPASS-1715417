@@ -6,14 +6,15 @@ import influencePattern as ip
 import clockFunctions as cl
 
 
-profile1 = ip.profile_setup(60)
+profile1 = ip.profile_setup(60, 12345)
 use_profile1 = pt.use_profile(profile1)
-altered_profile1 = pt.simulate_usecase(use_profile1, 0.3, 1, 60)
+altered_profile1 = pt.simulate_usecase(use_profile1, 0.5, 1, 60)
 x = lr.xlist(altered_profile1[1][0])
 y = altered_profile1[1][0]
+
 y2 = cl.lst_strip_day(profile1[1][0])
 y = cl.lst_strip_day(y)
-y2 = cl.lst_strip_day(y2)
+# y2 = cl.lst_strip_day(y2)
 
 print(y)
 print(y2)

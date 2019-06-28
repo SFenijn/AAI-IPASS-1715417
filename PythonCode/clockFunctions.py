@@ -29,3 +29,9 @@ def to_clock_strip_day(num):
     num2 = clockToNum(time)
     time2 = numToClock(num2)
     return time2
+
+
+def strip_day(t):
+    time = clockToNum(t)
+    return numToClock(time)
+

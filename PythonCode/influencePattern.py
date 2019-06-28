@@ -17,14 +17,14 @@ def setsleeptime_target():
     return st_target
 
 
-def profile_setup(days):
+def profile_setup(days, seed):
     """"Make a list with the sleepdata and tagets on a set index position"""
     target_lst = []
     target_lst.append(setbedtime_target())
     target_lst.append(setwakuptime_target())
     target_lst.append(setsleeptime_target())
 
-    sleepdata = rgen.generate_sleep_data(days)
+    sleepdata = rgen.generate_sleep_data(days, seed)
     return target_lst, sleepdata
 
 
@@ -44,16 +44,19 @@ def auto_update_profile(profile, bt, st):
 
 def difference(data, change, maxchange):
     """"returns te amount time to change"""
+    # receive data
     bt_target = data[0][0]
     time_list = data[1][0][-6:]
     print(time_list)
     # make prediction for bedtime.
     predicted_bt = lr.findPrediction(lr.xlist(time_list)[-1] + 1, lr.xlist(time_list), time_list)
 
-    # Calculate bedtime offset to bedtime target and restrict if need be
+    # Calculate bedtime offset to bedtime target.
     diff = bt_target - predicted_bt
     bt_change = change * diff
     bt_change = abs(bt_change)
+
+    # restrict to not go over the maxchange
     if bt_change > maxchange:
         bt_change = maxchange
     return predicted_bt, bt_change, maxchange
@@ -61,30 +64,35 @@ def difference(data, change, maxchange):
 
 def action_clock(diff, data):
     """"Returns the time when the action should take place"""
+    # receive data
     target = cl.to_clock_strip_day(data[0][0])
     prediction = cl.to_clock_strip_day(diff[0])
+    fullprediction = cl.numToClock(diff[0])
     change = cl.to_clock_strip_day(diff[1])
     maxchange = diff[2]
+
+    # check if the action needs to be later or earlier in the day.
     plus = prediction + change
     min = prediction - change
-    print(plus)
-    print(min)
-
-    diff_p = abs(cl.clockToNum(plus) - cl.clockToNum(target))
-    diff_m = abs(cl.clockToNum(min) - cl.clockToNum(target))
-    print(diff_p)
-    print(diff_m)
-
+    # convert to floats
+    d_target = cl.clockToNum(target)
+    plus = cl.clockToNum_with_day(plus)
+    min = cl.clockToNum_with_day(min)
+    # check who is closest to target
+    diff_p = abs(plus - d_target)
+    diff_m = abs(min - d_target)
+    # pick time closest to target
     if diff_p < diff_m:
-        action_t = plus
+        action_t = fullprediction + change
     else:
-        action_t = min
-    # if action time is close to target just set the action time to the target time.
-    target_ofset = abs(cl.clockToNum(action_t) - cl.clockToNum(target))
-    if target_ofset <= cl.clockToNum(change)*3 and target_ofset <= maxchange:
-        action_t = target
+        action_t = fullprediction - change
 
-    return cl.clockToNum_with_day(action_t)
+    # if action time is in range of maxchange, set the action time to the target time.
+    target_ofset = abs(cl.clockToNum(action_t) - d_target)
+    if target_ofset <= cl.clockToNum(change)*3 and target_ofset <= maxchange:
+        return cl.clockToNum_with_day(target)
+
+    return cl.clockToNum(action_t)
 
 
 def action_numb(diff, data):

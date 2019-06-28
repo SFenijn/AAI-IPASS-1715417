@@ -2,15 +2,16 @@ import random
 import random as r
 
 
-def generate_base_line():
+def generate_base_line(seed):
     """"Generates basses for bed-time, and sleep-time"""
+    random.seed(seed)
     bed_time = r.randint(0, 24)
     sleep_time = r.randint(3, 13)
     return bed_time, sleep_time
 
 
-def generate_sleep_data(len):
-    base = generate_base_line()
+def generate_sleep_data(len, seed):
+    base = generate_base_line(seed)
     bed_time = base[0]
     bed_time_lst = []
     sleep_time_lst = []
