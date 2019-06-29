@@ -22,5 +22,6 @@ y2 = cl.lst_strip_day(y2)
 
 plt.plot(x, y)
 plt.plot(x, y2, 'ro')
-plt.yticks(np.arange(0, 23, step=1))
+plt.yticks(np.arange(0, 24, step=1))
+plt.xticks(np.arange(0, 61, step=7))
 plt.show()
