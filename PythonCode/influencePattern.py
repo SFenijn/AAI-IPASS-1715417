@@ -67,32 +67,18 @@ def action_clock(diff, data):
     # receive data
     target = cl.to_clock_strip_day(data[0][0])
     prediction = cl.to_clock_strip_day(diff[0])
-    fullprediction = cl.numToClock(diff[0])
+    prediction_with_day = cl.numToClock(diff[0])
     change = cl.to_clock_strip_day(diff[1])
-    maxchange = diff[2]
+    print(change)
 
     # check if the action needs to be later or earlier in the day.
-    plus = prediction + change
-    min = prediction - change
-    # convert to floats
-    d_target = cl.clockToNum(target)
-    plus = cl.clockToNum_with_day(plus)
-    min = cl.clockToNum_with_day(min)
-    # check who is closest to target
-    diff_p = abs(plus - d_target)
-    diff_m = abs(min - d_target)
-    # pick time closest to target
-    if diff_p < diff_m:
-        action_t = fullprediction + change
+    later = cl.closest(target, prediction, change)
+    print(later)
+    print(prediction_with_day + change, prediction_with_day - change)
+    if later:
+        return cl.clockToNum_with_day(prediction_with_day + change)
     else:
-        action_t = fullprediction - change
-
-    # if action time is in range of maxchange, set the action time to the target time.
-    target_ofset = abs(cl.clockToNum(action_t) - d_target)
-    if target_ofset <= cl.clockToNum(change)*3 and target_ofset <= maxchange:
-        return cl.clockToNum_with_day(target)
-
-    return cl.clockToNum(action_t)
+        return cl.clockToNum_with_day(prediction_with_day - change)
 
 
 def action_numb(diff, data):
