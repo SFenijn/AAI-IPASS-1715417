@@ -2,8 +2,6 @@ import linearRegression as lr
 import clockFunctions as cl
 
 
-
-
 def difference(data, change, maxchange):
     """"returns te amount time to change"""
     # receive data
@@ -52,8 +50,8 @@ def integral(data):
 
     #integral:
     i = 0
+    intgrl = 0
     while i < len(ylist[7:]):
-        intgrl = 0
         # get y
         y = lr.findy(i, lr.xlist(ylist[7:]), ylist[7:]) - ylist[6]
         # calculate integral
@@ -64,11 +62,8 @@ def integral(data):
     return intgrl
 
 
-def pid(data, previous_e, integral, Kp, Ki, Kd):
+def pid(setpoint, ylist, previous_e, integral, Kp, Ki, Kd):
     """"PID controller to smoothly go to target(setpoint)"""
-    # receive data
-    setpoint = data[0][0]
-    ylist = data[1][0]
     # get measured value
     measured_value = lr.findy(lr.xlist(ylist)[-1] + 1, lr.xlist(ylist), ylist)
     # reset previous error
@@ -81,7 +76,6 @@ def pid(data, previous_e, integral, Kp, Ki, Kd):
     derivative = (error - previous_error) / 0.1
     # output and tuning
     output = (Kp * error) + (Ki * integral) + (Kd * derivative)
-    print(output, measured_value)
     return output, measured_value, error, newintegral
 
 

@@ -10,6 +10,7 @@ def generate_base_line(seed):
 
 
 def generate_sleep_data(len, seed):
+    """"generates random sleepdata with the use of a seed"""
     base = generate_base_line(seed)
     bed_time = base[0]
     bed_time_lst = []
@@ -29,6 +30,7 @@ def generate_sleep_data(len, seed):
 
 
 def get_wakeup_time(data):
+    """calculates wakeuptimes based on bedtime and sleeptime"""
     wakeup_time_lst = []
     for i in range(len(data[1])):
         wakeup_time = data[0][i] + data[1][i]
@@ -37,9 +39,15 @@ def get_wakeup_time(data):
 
 
 def procentage_bool(percentage, seed):
+    """":returns boolean based on given %"""
     chance = percentage / 100
     rand = random.random(seed)
     return chance < rand
+
+
+def generate_error(value):
+    """"takes a value and gives it an error"""
+    return value + round(random.uniform(-3.0, 3.0), 3)
 
 
 

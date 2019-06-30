@@ -3,20 +3,24 @@ from datetime import timedelta
 
 
 def numToClock(t):
+    """"int/float to datetime"""
     return timedelta(hours=t)
 
 
 def clockToNum_with_day(t):
+    """"datetime to float with datetime days"""
     day_h = t.days * 24
     rest_h = t.seconds /60 /60
     return day_h + rest_h
 
 
 def clockToNum(t):
+    """"datetime to float without datetime days"""
     return t.seconds / 60 / 60
 
 
 def lst_strip_day(list):
+    """"strip datetime day from float from a list of floats"""
     newlist = []
     for i in list:
         time = numToClock(i)
@@ -25,6 +29,7 @@ def lst_strip_day(list):
 
 
 def to_clock_strip_day(num):
+    """"strip datetime day from float and to datetime"""
     time = numToClock(num)
     num2 = clockToNum(time)
     time2 = numToClock(num2)
@@ -32,16 +37,19 @@ def to_clock_strip_day(num):
 
 
 def strip_day(t):
+    """strip datatime day from a datetime"""
     num = clockToNum(t)
     return numToClock(num)
 
 
 def num_strip_day(t):
+    """strip datetime day from float"""
     time = numToClock(t)
     return clockToNum(time)
 
 
 def closest(target, prediction, change):
+    """"find if plus or min is closest to target"""
     plus = strip_day(prediction + change)
     min = strip_day(prediction - change)
     target = clockToNum(target)
