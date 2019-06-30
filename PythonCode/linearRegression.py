@@ -83,7 +83,7 @@ def findRgrLine(listX, listY):
     return y
 
 
-def findPrediction(x, listX, listY):
+def findy(x, listX, listY):
     y = (findM(listX, listY) * x) + findB(listX, listY)
     return y
 

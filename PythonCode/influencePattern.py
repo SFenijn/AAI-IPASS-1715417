@@ -1,58 +1,20 @@
-import RandomDataGenerator as rgen
 import linearRegression as lr
 import clockFunctions as cl
 
-def setbedtime_target():
-    bt_target = float(input("Hoelaat wil je gaan slapen?"))
-    return bt_target
 
-
-def setwakuptime_target():
-    wt_target = float(input("Hoelaat moet je uiterlijk opstaan?"))
-    return wt_target
-
-
-def setsleeptime_target():
-    st_target = float(input("Hoelang wil je slapen?"))
-    return st_target
-
-
-def profile_setup(days, seed):
-    """"Make a list with the sleepdata and tagets on a set index position"""
-    target_lst = []
-    target_lst.append(setbedtime_target())
-    target_lst.append(setwakuptime_target())
-    target_lst.append(setsleeptime_target())
-
-    sleepdata = rgen.generate_sleep_data(days, seed)
-    return target_lst, sleepdata
-
-
-def update_profile(profile):
-    bt = float(input("Waneer ben je gaan slapen?"))
-    st = float(input("Hoelang heb je geslapen?"))
-    profile[1][0].append(bt)
-    profile[1][1].append(st)
-    return profile
-
-
-def auto_update_profile(profile, bt, st):
-    profile[1][0].append(bt)
-    profile[1][1].append(st)
-    return profile
 
 
 def difference(data, change, maxchange):
     """"returns te amount time to change"""
     # receive data
-    bt_target = data[0][0]
+    target = data[0][0]
     time_list = data[1][0][-6:]
     print(time_list)
     # make prediction for bedtime.
-    predicted_bt = lr.findPrediction(lr.xlist(time_list)[-1] + 1, lr.xlist(time_list), time_list)
+    predicted_bt = lr.findy(lr.xlist(time_list)[-1] + 1, lr.xlist(time_list), time_list)
 
     # Calculate bedtime offset to bedtime target.
-    diff = bt_target - predicted_bt
+    diff = target - predicted_bt
     bt_change = change * diff
     bt_change = abs(bt_change)
 
@@ -69,12 +31,88 @@ def action_clock(diff, data):
     prediction = cl.to_clock_strip_day(diff[0])
     prediction_with_day = cl.numToClock(diff[0])
     change = cl.to_clock_strip_day(diff[1])
-    print(change)
 
     # check if the action needs to be later or earlier in the day.
     later = cl.closest(target, prediction, change)
-    print(later)
-    print(prediction_with_day + change, prediction_with_day - change)
+    if later:
+        return cl.clockToNum_with_day(prediction_with_day + change)
+    else:
+        return cl.clockToNum_with_day(prediction_with_day - change)
+
+
+def integral(data):
+    """"returns te amount time to change"""
+    # set n for number of squars in riemann sum
+    n = 100
+    # receive data
+    ylist = data[1][0]
+
+    # calculate delta x, the 7 stands for the start of the PID influance
+    deltax = len(ylist) - 0 / n
+
+    #integral:
+    i = 0
+    while i < len(ylist[7:]):
+        intgrl = 0
+        # get y
+        y = lr.findy(i, lr.xlist(ylist[7:]), ylist[7:]) - ylist[6]
+        # calculate integral
+        area = y *deltax
+        intgrl += area
+
+        i += deltax
+    return intgrl
+
+
+def pid(data, previous_e, integral, Kp, Ki, Kd):
+    """"PID controller to smoothly go to target(setpoint)"""
+    # receive data
+    setpoint = data[0][0]
+    ylist = data[1][0]
+    # get measured value
+    measured_value = lr.findy(lr.xlist(ylist)[-1] + 1, lr.xlist(ylist), ylist)
+    # reset previous error
+    previous_error = previous_e
+    error = abs(setpoint - measured_value)
+    # set newintegral
+    newintegral = integral + error
+    # I and D
+    integral = (integral + error) / 0.1
+    derivative = (error - previous_error) / 0.1
+    # output and tuning
+    output = (Kp * error) + (Ki * integral) + (Kd * derivative)
+    print(output, measured_value)
+    return output, measured_value, error, newintegral
+
+
+def action_clock2(diff, measured_value, data):
+    """"Returns the time when the action should take place"""
+    # receive data
+    target = cl.to_clock_strip_day(data[0][0])
+    prediction = cl.to_clock_strip_day(measured_value)
+    prediction_with_day = cl.numToClock(measured_value)
+    change = cl.to_clock_strip_day(diff)
+
+    # check if the action needs to be later or earlier in the day.
+    later = cl.closest(target, prediction, change)
+    if later:
+        return cl.clockToNum_with_day(prediction_with_day + change)
+    else:
+        return cl.clockToNum_with_day(prediction_with_day - change)
+
+
+def action_clock2_temp(diff, data):
+    """"Returns the time when the action should take place"""
+    # receive data
+    time_list = data[1][0][-6:]
+    measured_value = lr.findy(lr.xlist(time_list)[-1] + 1, lr.xlist(time_list), time_list)
+    target = cl.to_clock_strip_day(data[0][0])
+    prediction = cl.to_clock_strip_day(measured_value)
+    prediction_with_day = cl.numToClock(measured_value)
+    change = cl.to_clock_strip_day(diff)
+
+    # check if the action needs to be later or earlier in the day.
+    later = cl.closest(target, prediction, change)
     if later:
         return cl.clockToNum_with_day(prediction_with_day + change)
     else:

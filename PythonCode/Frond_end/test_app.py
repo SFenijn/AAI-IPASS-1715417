@@ -3,7 +3,7 @@ from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
 
 import numpy as np
-import patternTesting as pt
+import PatternAdjustingSimulation as pt
 import linearRegression as lr
 import influencePattern as ip
 import clockFunctions as cl

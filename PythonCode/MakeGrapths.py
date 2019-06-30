@@ -1,15 +1,20 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import patternTesting as pt
+import PatternAdjustingSimulation as inl
 import linearRegression as lr
-import influencePattern as ip
 import clockFunctions as cl
+import ProfileSetup as pf
 
-seed1 = 11185
+seed1 = 11183
 seed2 = 12345
-profile1 = ip.profile_setup(60, seed2)
-use_profile1 = pt.use_profile(profile1)
-altered_profile1 = pt.simulate_usecase(use_profile1, 0.5, 1, 60)
+profile1 = pf.profile_setup(60, seed2)
+use_profile1 = pf.use_profile(profile1, 6)
+print(use_profile1)
+
+altered_profile1 = inl.simulate_proportional(use_profile1, 0.2, 1, 60, 6)
+# altered_profile1 = inl.simulate_pid(use_profile1, 50, 6)
+
+
 x = lr.xlist(altered_profile1[1][0])
 y = altered_profile1[1][0]
 
