@@ -4,8 +4,9 @@ import MakeGraphs as graph
 
 
 def run():
+    """runs slaapritme-aanpassen programma"""
     # print titel
-    print("IPASS Datagedreven slaapritme-analyse, door: Stijn Fenijn\n")
+    print("IPASS Datagedreven slaapritme-aanpassen, door: Stijn Fenijn\n")
 
     # vraag welke controller gebruikt gaat worden
     controller = int(input("Welke controller wil je gebruiken?\n Proportional: PRESS 1\n PID: PRESS 2\n"))
@@ -15,6 +16,7 @@ def run():
         print("Controller = PID\n")
 
     # maak een seed aan
+    seed = 12345
     s = int(input("Wil je de ingebuide seed gebruiken?\n PRESS: 1 for yes and 0 for no\n"))
     if s == 1:
         s_choice = int(input("welke seed wil je gebruiken? \nPRESS: 1, 2 of 3\n"))
