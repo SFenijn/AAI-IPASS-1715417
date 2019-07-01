@@ -94,24 +94,6 @@ def action_clock2(diff, measured_value, data):
         return cl.clockToNum_with_day(prediction_with_day - change)
 
 
-def action_clock2_temp(diff, data):
-    """"Returns the time when the action should take place"""
-    # receive data
-    time_list = data[1][0][-6:]
-    measured_value = lr.findy(lr.xlist(time_list)[-1] + 1, lr.xlist(time_list), time_list)
-    target = cl.to_clock_strip_day(data[0][0])
-    prediction = cl.to_clock_strip_day(measured_value)
-    prediction_with_day = cl.numToClock(measured_value)
-    change = cl.to_clock_strip_day(diff)
-
-    # check if the action needs to be later or earlier in the day.
-    later = cl.closest(target, prediction, change)
-    if later:
-        return cl.clockToNum_with_day(prediction_with_day + change)
-    else:
-        return cl.clockToNum_with_day(prediction_with_day - change)
-
-
 def action_numb(diff, data):
     """"Returns the number for the action"""
     target = data[0][0]
