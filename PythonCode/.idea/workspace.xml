@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62aedcaa-44d6-41fd-a657-c5967e923320" name="Default Changelist" comment="code for presentation">
-      <change beforePath="$PROJECT_DIR$/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.py" afterDir="false" />
+    <list default="true" id="62aedcaa-44d6-41fd-a657-c5967e923320" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Frond_end/ClientLineInterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Frond_end/ClientLineInterface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +18,7 @@
     <SUITE FILE_PATH="coverage/PythonCode$ClientLineInterface__1_.coverage" NAME="ClientLineInterface (1) Coverage Results" MODIFIED="1561931188515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/slaapritme-aanpassen/Frond_end" />
     <SUITE FILE_PATH="coverage/PythonCode$RandomDataGenerator.coverage" NAME="RandomDataGenerator Coverage Results" MODIFIED="1561715293512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$MakeGrapths.coverage" NAME="MakeGrapths Coverage Results" MODIFIED="1561927029504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonCode$ClientLineInterface.coverage" NAME="ClientLineInterface Coverage Results" MODIFIED="1561971265643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Frond_end" />
+    <SUITE FILE_PATH="coverage/PythonCode$ClientLineInterface.coverage" NAME="ClientLineInterface Coverage Results" MODIFIED="1562091299524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Frond_end" />
     <SUITE FILE_PATH="coverage/PythonCode$test_app.coverage" NAME="test_app Coverage Results" MODIFIED="1561967700550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Frond_end" />
   </component>
   <component name="FileEditorManager">
@@ -25,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Frond_end/ClientLineInterface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="217">
+              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -139,11 +140,6 @@
               <item name="PythonCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonCode" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PythonCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonCode" type="462c0819:PsiDirectoryNode" />
-              <item name="Frond_end" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -169,7 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.clockFunctions.html">
+  <component name="RunManager" selected="Python.ClientLineInterface">
     <configuration name="clockFunctions.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PythonCode/html/PythonCode/clockFunctions.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -263,8 +259,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.clockFunctions.html" />
         <item itemvalue="Python.ClientLineInterface" />
+        <item itemvalue="JavaScript Debug.clockFunctions.html" />
         <item itemvalue="Python.test_app" />
         <item itemvalue="Python.ClientLineInterface (1)" />
         <item itemvalue="Python.MakeGrapths" />
@@ -285,7 +281,7 @@
       <workItem from="1561131242639" duration="598000" />
       <workItem from="1561370496515" duration="75470000" />
       <workItem from="1561902996666" duration="18788000" />
-      <workItem from="1561965948961" duration="6227000" />
+      <workItem from="1561965948961" duration="7366000" />
     </task>
     <task id="LOCAL-00001" summary="Made pycharm project and update to .gitignore">
       <created>1560862269384</created>
@@ -371,21 +367,28 @@
       <option name="project" value="LOCAL" />
       <updated>1561968356763</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="documentatie">
+      <created>1561974930606</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1561974930606</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101815000" />
+    <option name="totallyTimeSpent" value="102954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13648649" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13648649" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924962" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36906585" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36906585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -399,7 +402,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.32972974" />
+      <window_info anchor="right" x="392" y="89" width="1047" height="645" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.32972974" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
@@ -442,7 +445,8 @@
     <MESSAGE value="fixed typo, and changed file setup" />
     <MESSAGE value="changed file setup, program now not working." />
     <MESSAGE value="code for presentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="code for presentation" />
+    <MESSAGE value="documentatie" />
+    <option name="LAST_COMMIT_MESSAGE" value="documentatie" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/matplotlib/cbook/__init__.py">
@@ -524,8 +528,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Frond_end/ClientLineInterface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        <state relative-caret-position="217">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>

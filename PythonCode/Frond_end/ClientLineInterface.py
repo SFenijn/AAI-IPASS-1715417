@@ -17,7 +17,7 @@ def run():
 
     # maak een seed aan
     seed = 12345
-    s = int(input("Wil je de ingebuide seed gebruiken?\n PRESS: 1 for yes and 0 for no\n"))
+    s = int(input("Wil je de ingebouwde seed gebruiken?\n PRESS: 1 for yes and 0 for no\n"))
     if s == 1:
         s_choice = int(input("welke seed wil je gebruiken? \nPRESS: 1, 2 of 3\n"))
         if s_choice == 1:
