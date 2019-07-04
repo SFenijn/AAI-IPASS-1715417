@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62aedcaa-44d6-41fd-a657-c5967e923320" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frond_end/ClientLineInterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Frond_end/ClientLineInterface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatternAdjustingSimulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/PatternAdjustingSimulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomDataGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RandomDataGenerator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,16 +20,16 @@
     <SUITE FILE_PATH="coverage/PythonCode$ClientLineInterface__1_.coverage" NAME="ClientLineInterface (1) Coverage Results" MODIFIED="1561931188515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/slaapritme-aanpassen/Frond_end" />
     <SUITE FILE_PATH="coverage/PythonCode$RandomDataGenerator.coverage" NAME="RandomDataGenerator Coverage Results" MODIFIED="1561715293512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$MakeGrapths.coverage" NAME="MakeGrapths Coverage Results" MODIFIED="1561927029504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonCode$ClientLineInterface.coverage" NAME="ClientLineInterface Coverage Results" MODIFIED="1562091299524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Frond_end" />
+    <SUITE FILE_PATH="coverage/PythonCode$ClientLineInterface.coverage" NAME="ClientLineInterface Coverage Results" MODIFIED="1562225128061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Frond_end" />
     <SUITE FILE_PATH="coverage/PythonCode$test_app.coverage" NAME="test_app Coverage Results" MODIFIED="1561967700550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Frond_end" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frond_end/ClientLineInterface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="104">
+              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -36,21 +38,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MakeGraphs.py">
+        <entry file="file://$PROJECT_DIR$/ProfileSetup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+            <state relative-caret-position="-341" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RandomDataGenerator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frond_end/test_app.py">
+        <entry file="file://$PROJECT_DIR$/MakeGraphs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="356">
+              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
               <folding>
-                <element signature="e#2#12#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,24 +68,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="340">
               <caret line="93" column="67" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PatternAdjustingSimulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="223">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linearRegression.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1220" />
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -105,18 +116,18 @@
         <option value="$PROJECT_DIR$/InfluenceLoops.py" />
         <option value="$PROJECT_DIR$/clockFunctions.py" />
         <option value="$PROJECT_DIR$/linearRegression.py" />
-        <option value="$PROJECT_DIR$/RandomDataGenerator.py" />
         <option value="$PROJECT_DIR$/Frond_end/lientlineInterface.py" />
         <option value="$PROJECT_DIR$/influencePattern.py" />
         <option value="$PROJECT_DIR$/MakeGrapths.py" />
         <option value="$PROJECT_DIR$/ProfileSetup.py" />
         <option value="$PROJECT_DIR$/slaapritme-aanpassen/Frond_end/__init__.py file.py" />
         <option value="$PROJECT_DIR$/slaapritme-aanpassen/Frond_end/ClientLineInterface.py" />
-        <option value="$PROJECT_DIR$/PatternAdjustingSimulation.py" />
         <option value="$PROJECT_DIR$/Frond_end/test_app.py" />
         <option value="$PROJECT_DIR$/MakeGraphs.py" />
         <option value="$PROJECT_DIR$/Controller.py" />
+        <option value="$PROJECT_DIR$/RandomDataGenerator.py" />
         <option value="$PROJECT_DIR$/Frond_end/ClientLineInterface.py" />
+        <option value="$PROJECT_DIR$/PatternAdjustingSimulation.py" />
       </list>
     </option>
   </component>
@@ -132,7 +143,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,6 +154,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,7 +292,8 @@
       <workItem from="1561131242639" duration="598000" />
       <workItem from="1561370496515" duration="75470000" />
       <workItem from="1561902996666" duration="18788000" />
-      <workItem from="1561965948961" duration="7366000" />
+      <workItem from="1561965948961" duration="7963000" />
+      <workItem from="1562161191890" duration="2798000" />
     </task>
     <task id="LOCAL-00001" summary="Made pycharm project and update to .gitignore">
       <created>1560862269384</created>
@@ -378,17 +390,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102954000" />
+    <option name="totallyTimeSpent" value="106349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13648649" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13851352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924962" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36906585" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38591117" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -402,16 +414,16 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="392" y="89" width="1047" height="645" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.32972974" />
+      <window_info anchor="right" x="361" y="102" width="1047" height="645" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.32972974" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13243243" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13851352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924962" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37212864" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.10566615" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -425,7 +437,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.32972974" />
+      <window_info anchor="right" x="361" y="102" width="1047" height="645" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.32972974" />
       <window_info anchor="right" id="Database" order="4" />
     </layout-to-restore>
   </component>
@@ -459,80 +471,70 @@
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/numpy/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/RandomDataGenerator.py" />
-    <entry file="file://$PROJECT_DIR$/ProfileSetup.py" />
     <entry file="file://$PROJECT_DIR$/clockFunctions.py" />
     <entry file="file://$PROJECT_DIR$/PID/Controller.py" />
     <entry file="file://$PROJECT_DIR$/slaapritme-aanpassen/Frond_end/__init__.py file.py" />
-    <entry file="file://$PROJECT_DIR$/slaapritme-aanpassen/Back_end/clockFunctions.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slaapritme-aanpassen/Back_end/RandomDataGenerator.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slaapritme-aanpassen/Frond_end/ClientLineInterface.py">
+    <entry file="file://$PROJECT_DIR$/slaapritme-aanpassen/Back_end/clockFunctions.py" />
+    <entry file="file://$PROJECT_DIR$/slaapritme-aanpassen/Back_end/RandomDataGenerator.py" />
+    <entry file="file://$PROJECT_DIR$/slaapritme-aanpassen/Frond_end/ClientLineInterface.py" />
+    <entry file="file://$PROJECT_DIR$/html/PythonCode/clockFunctions.html" />
+    <entry file="file://$PROJECT_DIR$/html/PythonCode/Controller.html" />
+    <entry file="file://$PROJECT_DIR$/html/PythonCode/PatternAdjustingSimulation.html" />
+    <entry file="file://$PROJECT_DIR$/Frond_end/test_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linearRegression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1220" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="93" column="67" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MakeGraphs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
+        <state relative-caret-position="356">
           <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frond_end/test_app.py">
+    <entry file="file://$PROJECT_DIR$/ProfileSetup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="-341" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frond_end/ClientLineInterface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
           <folding>
-            <element signature="e#2#12#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandomDataGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PatternAdjustingSimulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="93" column="67" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linearRegression.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/PythonCode/clockFunctions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/PythonCode/Controller.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1960" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/PythonCode/PatternAdjustingSimulation.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frond_end/ClientLineInterface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="223">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
         </state>
       </provider>
     </entry>

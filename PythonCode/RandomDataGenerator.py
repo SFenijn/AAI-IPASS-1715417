@@ -12,7 +12,7 @@ def generate_base_line(seed):
 def generate_sleep_data(len, seed):
     """"generates random sleepdata with the use of a seed"""
     base = generate_base_line(seed)
-    bed_time = base[0]
+    bed_time = 0
     bed_time_lst = []
     sleep_time_lst = []
     for i in range(len):
