@@ -27,3 +27,21 @@ def drawgrapth(profile, altered_profile):
     plt.ylabel("time of day")
     plt.legend(loc='upper left')
     plt.show()
+
+
+def draw_pid_grapth(target, pid_data, errors, error_dict):
+    """"draw graph"""
+    # make x tiks
+    x = lr.xlist(pid_data)
+
+    # draw graph
+    plt.plot(x, pid_data, label="PID outcome")
+    plt.plot(x, errors, 'ro', label="diviation")
+    plt.axhline(y=target, linewidth=1, color='k')
+    plt.scatter(list(error_dict.keys()), list(error_dict.values()), color='black')
+
+    # make labels
+    plt.xlabel("Time in days")
+    plt.ylabel("diviation from target")
+    plt.legend(loc='upper left')
+    plt.show()

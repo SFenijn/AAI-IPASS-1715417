@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62aedcaa-44d6-41fd-a657-c5967e923320" name="Default Changelist" comment="">
+    <list default="true" id="62aedcaa-44d6-41fd-a657-c5967e923320" name="Default Changelist" comment="terughalen code">
+      <change afterPath="$PROJECT_DIR$/PID_Testing/TestFile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frond_end/ClientLineInterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Frond_end/ClientLineInterface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakeGraphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/MakeGraphs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PatternAdjustingSimulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/PatternAdjustingSimulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileSetup.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileSetup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RandomDataGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RandomDataGenerator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,9 +22,10 @@
     <SUITE FILE_PATH="coverage/PythonCode$clockFunctions.coverage" NAME="clockFunctions Coverage Results" MODIFIED="1561811043785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$influenceSleepPattern.coverage" NAME="influenceSleepPattern Coverage Results" MODIFIED="1561472084071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$ClientLineInterface__1_.coverage" NAME="ClientLineInterface (1) Coverage Results" MODIFIED="1561931188515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/slaapritme-aanpassen/Frond_end" />
+    <SUITE FILE_PATH="coverage/PythonCode$TestFile.coverage" NAME="TestFile Coverage Results" MODIFIED="1562246118056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PID_Testing" />
     <SUITE FILE_PATH="coverage/PythonCode$RandomDataGenerator.coverage" NAME="RandomDataGenerator Coverage Results" MODIFIED="1561715293512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$MakeGrapths.coverage" NAME="MakeGrapths Coverage Results" MODIFIED="1561927029504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonCode$ClientLineInterface.coverage" NAME="ClientLineInterface Coverage Results" MODIFIED="1562225128061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Frond_end" />
+    <SUITE FILE_PATH="coverage/PythonCode$ClientLineInterface.coverage" NAME="ClientLineInterface Coverage Results" MODIFIED="1562231479562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Frond_end" />
     <SUITE FILE_PATH="coverage/PythonCode$test_app.coverage" NAME="test_app Coverage Results" MODIFIED="1561967700550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Frond_end" />
   </component>
   <component name="FileEditorManager">
@@ -28,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frond_end/ClientLineInterface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+            <state>
+              <caret selection-end-column="40" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -40,15 +45,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProfileSetup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-341" />
+            <state relative-caret-position="308">
+              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PID_Testing/TestFile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RandomDataGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="-202">
+              <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -56,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MakeGraphs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+            <state relative-caret-position="272">
+              <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -68,25 +87,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="93" column="67" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PatternAdjustingSimulation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="-542">
+              <caret line="84" column="36" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linearRegression.py">
+        <entry file="file://$PROJECT_DIR$/PatternAdjustingSimulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1220" />
+            <state relative-caret-position="153">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="37" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -105,6 +120,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -119,15 +135,16 @@
         <option value="$PROJECT_DIR$/Frond_end/lientlineInterface.py" />
         <option value="$PROJECT_DIR$/influencePattern.py" />
         <option value="$PROJECT_DIR$/MakeGrapths.py" />
-        <option value="$PROJECT_DIR$/ProfileSetup.py" />
         <option value="$PROJECT_DIR$/slaapritme-aanpassen/Frond_end/__init__.py file.py" />
         <option value="$PROJECT_DIR$/slaapritme-aanpassen/Frond_end/ClientLineInterface.py" />
         <option value="$PROJECT_DIR$/Frond_end/test_app.py" />
-        <option value="$PROJECT_DIR$/MakeGraphs.py" />
+        <option value="$PROJECT_DIR$/ProfileSetup.py" />
+        <option value="$PROJECT_DIR$/PatternAdjustingSimulation.py" />
+        <option value="$PROJECT_DIR$/Frond_end/ClientLineInterface.py" />
         <option value="$PROJECT_DIR$/Controller.py" />
         <option value="$PROJECT_DIR$/RandomDataGenerator.py" />
-        <option value="$PROJECT_DIR$/Frond_end/ClientLineInterface.py" />
-        <option value="$PROJECT_DIR$/PatternAdjustingSimulation.py" />
+        <option value="$PROJECT_DIR$/MakeGraphs.py" />
+        <option value="$PROJECT_DIR$/PID_Testing/TestFile.py" />
       </list>
     </option>
   </component>
@@ -176,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ClientLineInterface">
+  <component name="RunManager" selected="Python.TestFile">
     <configuration name="clockFunctions.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PythonCode/html/PythonCode/clockFunctions.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -224,7 +241,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MakeGrapths" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TestFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -232,12 +249,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PID_Testing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\ICT_HU\2018-2019\blok_d\Ipass\AAI-IPASS-1715417\PythonCode\MakeGraphs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PID_Testing/TestFile.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,11 +287,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TestFile" />
         <item itemvalue="Python.ClientLineInterface" />
         <item itemvalue="JavaScript Debug.clockFunctions.html" />
         <item itemvalue="Python.test_app" />
         <item itemvalue="Python.ClientLineInterface (1)" />
-        <item itemvalue="Python.MakeGrapths" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +310,7 @@
       <workItem from="1561370496515" duration="75470000" />
       <workItem from="1561902996666" duration="18788000" />
       <workItem from="1561965948961" duration="7963000" />
-      <workItem from="1562161191890" duration="2798000" />
+      <workItem from="1562161191890" duration="17549000" />
     </task>
     <task id="LOCAL-00001" summary="Made pycharm project and update to .gitignore">
       <created>1560862269384</created>
@@ -386,11 +403,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561974930606</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="terughalen code">
+      <created>1562230315310</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1562230315310</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106349000" />
+    <option name="totallyTimeSpent" value="121100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -400,7 +424,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924962" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38591117" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38591117" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -414,7 +438,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="361" y="102" width="1047" height="645" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.32972974" />
+      <window_info active="true" anchor="right" x="361" y="102" width="1047" height="645" id="SciView" order="3" visible="true" weight="0.32972974" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
@@ -458,7 +482,8 @@
     <MESSAGE value="changed file setup, program now not working." />
     <MESSAGE value="code for presentation" />
     <MESSAGE value="documentatie" />
-    <option name="LAST_COMMIT_MESSAGE" value="documentatie" />
+    <MESSAGE value="terughalen code" />
+    <option name="LAST_COMMIT_MESSAGE" value="terughalen code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/matplotlib/cbook/__init__.py">
@@ -492,49 +517,64 @@
         <state relative-caret-position="-1220" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller.py">
+    <entry file="file://$PROJECT_DIR$/PatternAdjustingSimulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="93" column="67" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
+        <state relative-caret-position="153">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="37" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MakeGraphs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProfileSetup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-341" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frond_end/ClientLineInterface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        <state>
+          <caret selection-end-column="40" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RandomDataGenerator.py">
+    <entry file="file://$PROJECT_DIR$/ProfileSetup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="308">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PatternAdjustingSimulation.py">
+    <entry file="file://$PROJECT_DIR$/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="-542">
+          <caret line="84" column="36" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandomDataGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-202">
+          <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MakeGraphs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PID_Testing/TestFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

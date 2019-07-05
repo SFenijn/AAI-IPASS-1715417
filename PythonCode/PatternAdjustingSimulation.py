@@ -18,18 +18,16 @@ def simulate_pid(profile, loops, measure_days):
     """function to simulate adjusting a pattern with a PID controller"""
     pid_tuning = [0.3, 0.0055, 0.0015]
     setpoint = profile[0][0]
-    starttime = 0
-    new_list = []
+    starttime = profile[1][0][-1]
+
     maxloops = loops - measure_days
     count = 0
     error = 0
     integral = 0
     while count < maxloops:
         pid = con.pid(setpoint, profile[1][0], error, integral, pid_tuning[0], pid_tuning[1], pid_tuning[2])
-        afweiking = profile[1][0][count]
-        new_list.append(pid[0] + afweiking)
+        profile[1][0].append(pid[0])
         error = pid[2]
         integral = pid[3]
         count += 1
-    print(new_list)
-    return new_list
+    return profile

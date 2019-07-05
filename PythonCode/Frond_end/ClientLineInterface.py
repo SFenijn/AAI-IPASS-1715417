@@ -41,8 +41,7 @@ def run():
 
     # setup profile
     profile = pf.profile_setup(days, seed)
-    # use_profile = pf.use_profile(profile, measure_days)
-    use_profile = profile
+    use_profile = pf.use_profile(profile, measure_days)
 
     # run simulation
     if controller == 1:

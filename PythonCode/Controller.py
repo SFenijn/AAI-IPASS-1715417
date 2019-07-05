@@ -78,6 +78,21 @@ def pid(setpoint, ylist, previous_e, integral, Kp, Ki, Kd):
     return output, measured_value, error, newintegral
 
 
+def pid_no_regression(setpoint, current_value, previous_e, integral, Kp, Ki, Kd):
+    """"PID controller to smoothly go to target(setpoint)"""
+    # reset previous error
+    previous_error = previous_e
+    error = setpoint - current_value
+    # set newintegral
+    newintegral = integral + error
+    # I and D
+    integral = (integral + error) / 0.1
+    derivative = (error - previous_error) / 0.1
+    # output and tuning
+    output = (Kp * error) + (Ki * integral) + (Kd * derivative)
+    return output, error, newintegral
+
+
 def action_clock2(diff, measured_value, data):
     """"Returns the time when the action should take place"""
     # receive data
