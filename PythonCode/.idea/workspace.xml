@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62aedcaa-44d6-41fd-a657-c5967e923320" name="Default Changelist" comment="terughalen code">
-      <change afterPath="$PROJECT_DIR$/PID_Testing/TestFile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frond_end/ClientLineInterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Frond_end/ClientLineInterface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MakeGraphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/MakeGraphs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatternAdjustingSimulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/PatternAdjustingSimulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileSetup.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileSetup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomDataGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RandomDataGenerator.py" afterDir="false" />
-    </list>
+    <list default="true" id="62aedcaa-44d6-41fd-a657-c5967e923320" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +13,7 @@
     <SUITE FILE_PATH="coverage/PythonCode$clockFunctions.coverage" NAME="clockFunctions Coverage Results" MODIFIED="1561811043785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$influenceSleepPattern.coverage" NAME="influenceSleepPattern Coverage Results" MODIFIED="1561472084071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$ClientLineInterface__1_.coverage" NAME="ClientLineInterface (1) Coverage Results" MODIFIED="1561931188515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/slaapritme-aanpassen/Frond_end" />
-    <SUITE FILE_PATH="coverage/PythonCode$TestFile.coverage" NAME="TestFile Coverage Results" MODIFIED="1562246118056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PID_Testing" />
+    <SUITE FILE_PATH="coverage/PythonCode$TestFile.coverage" NAME="TestFile Coverage Results" MODIFIED="1563630663780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PID_Testing" />
     <SUITE FILE_PATH="coverage/PythonCode$RandomDataGenerator.coverage" NAME="RandomDataGenerator Coverage Results" MODIFIED="1561715293512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$MakeGrapths.coverage" NAME="MakeGrapths Coverage Results" MODIFIED="1561927029504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$ClientLineInterface.coverage" NAME="ClientLineInterface Coverage Results" MODIFIED="1562231479562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Frond_end" />
@@ -310,7 +301,7 @@
       <workItem from="1561370496515" duration="75470000" />
       <workItem from="1561902996666" duration="18788000" />
       <workItem from="1561965948961" duration="7963000" />
-      <workItem from="1562161191890" duration="17549000" />
+      <workItem from="1562161191890" duration="19552000" />
     </task>
     <task id="LOCAL-00001" summary="Made pycharm project and update to .gitignore">
       <created>1560862269384</created>
@@ -410,14 +401,21 @@
       <option name="project" value="LOCAL" />
       <updated>1562230315310</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="verduidelijkt dat de PID werkt.">
+      <created>1562338117124</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1562338117124</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121100000" />
+    <option name="totallyTimeSpent" value="123103000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13851352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -483,7 +481,8 @@
     <MESSAGE value="code for presentation" />
     <MESSAGE value="documentatie" />
     <MESSAGE value="terughalen code" />
-    <option name="LAST_COMMIT_MESSAGE" value="terughalen code" />
+    <MESSAGE value="verduidelijkt dat de PID werkt." />
+    <option name="LAST_COMMIT_MESSAGE" value="verduidelijkt dat de PID werkt." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/matplotlib/cbook/__init__.py">

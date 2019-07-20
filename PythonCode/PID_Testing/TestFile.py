@@ -14,6 +14,8 @@ def PID_loop(error_data, target, maxloops , Kp, Ki, Kd):
     count = 0
     error = 0
     integral = 0
+    percentage = 100
+
     while count < maxloops:
         pid = con.pid_no_regression(target, current_value, error, integral, Kp, Ki, Kd)
         adjustment_values.append(pid[0])
@@ -22,7 +24,7 @@ def PID_loop(error_data, target, maxloops , Kp, Ki, Kd):
 
         # adjust current_value and add to list
         current_value += pid[0]
-        if rn.procentage_bool(10):
+        if rn.procentage_bool(percentage):
             current_value += error_data[count]
             e = {count + 1: error_data[count]}
             error_dict.update(e)
