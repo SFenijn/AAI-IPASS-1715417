@@ -33,9 +33,9 @@ def PID_loop(error_data, target, maxloops , Kp, Ki, Kd, percentage):
 
 
 seed = 12345
-target = 15
-day_count = 1000
-percentage = 10
+target = 3
+day_count = 100
+percentage = 100
 errors = rn.generate_error_data(day_count, seed)
 afwijking = rn.generate_diviation_from_target(day_count, seed)
 pid_information = PID_loop(errors, target, day_count, 0.1, 0.000030, 0.015, percentage)
