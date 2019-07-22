@@ -5,7 +5,7 @@ import MakeGraphs as graph
 print(rn.generate_error_data(12345, 59))
 
 
-def PID_loop(error_data, target, maxloops , Kp, Ki, Kd):
+def PID_loop(error_data, target, maxloops , Kp, Ki, Kd, percentage):
     """function ajust a value with a PID controller"""
     adjustment_values = []
     ylist = []
@@ -14,7 +14,6 @@ def PID_loop(error_data, target, maxloops , Kp, Ki, Kd):
     count = 0
     error = 0
     integral = 0
-    percentage = 100
 
     while count < maxloops:
         pid = con.pid_no_regression(target, current_value, error, integral, Kp, Ki, Kd)
@@ -34,11 +33,12 @@ def PID_loop(error_data, target, maxloops , Kp, Ki, Kd):
 
 
 seed = 12345
-target = 0
-day_count = 60
+target = 15
+day_count = 1000
+percentage = 10
 errors = rn.generate_error_data(day_count, seed)
 afwijking = rn.generate_diviation_from_target(day_count, seed)
-pid_information = PID_loop(errors, target, day_count, 0.1, 0.000030, 0.015)
+pid_information = PID_loop(errors, target, day_count, 0.1, 0.000030, 0.015, percentage)
 pid_ylist = pid_information[0]
 error_dict = pid_information[1]
 graph.draw_pid_grapth(target, pid_ylist, afwijking, error_dict)
